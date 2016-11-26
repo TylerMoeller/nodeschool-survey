@@ -1,0 +1,151 @@
+body {
+  background-color: #D3E4ED;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  min-width: 285px;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1024px;
+}
+
+header {
+  background-image: url('../img/BIFerry.jpg');
+  background-position: center center;
+  background-size: cover;
+  height: 15em;
+  opacity: .7;
+  /* opacity to help smooth out jpeg artifacts */
+  padding-top: 2.5em;
+}
+
+@media (max-width: 599px) {
+  header {
+    background-position: bottom center;
+  }
+}
+
+.small {
+  font-size: 14px;
+}
+
+a {
+  color: #0277bd;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h5 {
+  font-size: 1.3em;
+}
+
+label {
+  color: #333;
+}
+
+
+/* prevent input zoom on mobile */
+
+input[type='text'],
+input[type='number'],
+textarea {
+  font-size: 16px;
+}
+
+section {
+  margin: 50px auto;
+}
+
+.hr-custom {
+  border-top: solid 5px;
+  max-width: 85%;
+  margin: 40px auto 60px auto;
+  text-align: center;
+}
+
+.hr-custom:after {
+  background-color: #FFF;
+  content: '\e8cd';
+  font-family: 'Material Icons';
+  font-size: 2.5em;
+  padding: 0 .25em;
+  position: relative;
+  top: -.8em;
+}
+
+.survey-title {
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: -11em;
+  top: -12em;
+}
+
+@media (max-width: 599px) {
+  .survey-title {
+    margin-bottom: -8em;
+    top: -9em;
+  }
+}
+
+@media (max-width: 500px) {
+  .survey-title {
+    margin-bottom: -6em;
+    top: -7em;
+  }
+}
+
+.logo {
+  margin-bottom: 0;
+}
+
+.form {
+  background-color: white;
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 2em;
+  margin-bottom: 5em;
+  width: 90%;
+}
+
+.radio-label {
+  margin-bottom: .25em;
+  padding-right: .7em;
+}
+
+@media (min-width: 401px) and (max-width: 499px) {
+  .radio-label {
+    padding-right: .3em;
+  }
+}
+
+@media (max-width: 400px) {
+  .radio-label {
+    padding-right: 0;
+  }
+}
+
+.radio-button {
+  padding-top: .5em;
+}
+
+.day-label {
+  font-size: .8em;
+  font-weight: bold;
+  height: 33px;
+}
+
+.time-label {
+  font-size: .8em;
+  font-weight: bold;
+  margin-top: 1em;
+}
+
+.meetup-times .row {
+  border-bottom: 1px solid #eee;
+}
